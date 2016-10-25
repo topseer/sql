@@ -21,3 +21,7 @@ iris_data.loc[iris_data['class'] == 'Iris-setosa', 'sepal_width_cm'].hist()
 iris_data.loc[(iris_data['class'] == 'Iris-versicolor') &
               (iris_data['sepal_length_cm'] < 1.0),
               'sepal_length_cm'] *= 100.0
+
+#to and from csv
+iris_data.to_csv('iris-data-clean.csv', index=False)
+iris_data_clean = pd.read_csv('iris-data-clean.csv')               
