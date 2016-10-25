@@ -25,3 +25,10 @@ iris_data.loc[(iris_data['class'] == 'Iris-versicolor') &
 #to and from csv
 iris_data.to_csv('iris-data-clean.csv', index=False)
 iris_data_clean = pd.read_csv('iris-data-clean.csv')               
+
+#assert 
+#We can quickly test our data using assert statements: 
+#We assert that something must be true, 
+#if it is, then nothing happens and the notebook continues running. 
+#if our assertion is wrong, then the notebook stops running and brings it to our attention. For example:
+assert 1 == 2
