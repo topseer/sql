@@ -12,4 +12,12 @@ iris_data.describe()
 
 #drop rows by condition
 iris_data = iris_data.loc[(iris_data['class'] != 'Iris-setosa') | (iris_data['sepal_width_cm'] >= 2.5)]
+
+
+#hist graph
 iris_data.loc[iris_data['class'] == 'Iris-setosa', 'sepal_width_cm'].hist()
+
+#new way to assign value
+iris_data.loc[(iris_data['class'] == 'Iris-versicolor') &
+              (iris_data['sepal_length_cm'] < 1.0),
+              'sepal_length_cm'] *= 100.0
