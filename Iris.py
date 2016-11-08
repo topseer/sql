@@ -38,3 +38,11 @@ iris_data_clean = pd.read_csv('iris-data-clean.csv')
 #if it is, then nothing happens and the notebook continues running. 
 #if our assertion is wrong, then the notebook stops running and brings it to our attention. For example:
 assert 1 == 2
+
+
+
+#As it stands, sklearn decision trees do not handle categorical data - see issue #5442. 
+#This approach of using Label Encoding converts to integers which the DecisionTreeClassifier() will treat as numeric. 
+#If your categorical data is not ordinal, this is not good - you'll end up with splits that do not make sense. 
+#Using a OneHotEncoder is the only current valid way, but is computationally expensive
+
