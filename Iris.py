@@ -10,6 +10,9 @@ borrEmail.loc[borrEmail['Borremail'] =="mmnfreemason05@verizon.net"]
 #so that pandas knows to treat rows with 'NA' as missing values.
 iris_data = pd.read_csv('iris.csv', na_values=['NA'])
 
+#change data type
+leadsData_clean["Income"] = leadsData_clean["Income"].astype(float)
+
 #summary 
 iris_data.describe()
 
