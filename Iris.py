@@ -45,4 +45,6 @@ assert 1 == 2
 #This approach of using Label Encoding converts to integers which the DecisionTreeClassifier() will treat as numeric. 
 #If your categorical data is not ordinal, this is not good - you'll end up with splits that do not make sense. 
 #Using a OneHotEncoder is the only current valid way, but is computationally expensive
+###If you're using other languages (R/SAS), then categorical data is not a problem. 
+
 
