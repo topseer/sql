@@ -1,3 +1,6 @@
+#list column names and their data types
+loanData.dtypes
+
 #%%return unique values
 iris_data.unique()
 
