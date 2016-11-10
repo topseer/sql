@@ -50,4 +50,6 @@ assert 1 == 2
 #Using a OneHotEncoder is the only current valid way, but is computationally expensive
 ###If you're using other languages (R/SAS), then categorical data is not a problem. 
 
-
+#distribution chart
+import seaborn as sb
+sb.distplot(model_accuracies)
