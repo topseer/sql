@@ -1,6 +1,9 @@
 #list column names and their data types
 loanData.dtypes
 
+#remove commas and change to Float
+google_state["cost"] = google_state["Cost"].str.replace(',','').astype('float')
+
 #%%return unique values
 iris_data.unique()
 
